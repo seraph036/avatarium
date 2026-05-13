@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paralette</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./assets/favicon.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header_bar">
+        <ul class="row_nav">
+          <div>
+            <li><a href="index.html" class="home_active">λ</a></li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="procedimental.html"
+                class="link_ico"
+                id="c_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Procedimental"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="c_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="funcional.html"
+                class="link_ico"
+                id="haskell_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Funcional"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="haskell_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="orientada_a_objetos.html"
+                class="link_ico"
+                id="c_sharp_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Orientada a Objetos"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="c_sharp_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="reativa.html"
+                class="link_ico"
+                id="svelte_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Reativa"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="svelte_lang_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="logica.html"
+                class="link_ico"
+                id="prolog_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Lógica"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="prolog_indicator"></div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="main_container">
+        <h1 class="maintitle">Paralette</h1>
+        <div class="bodytxt">
+          <ul>
+            <li>
+              <span>
+                Esse site busca apresentar os
+                <a
+                  class="btn btn-lg dictterm color6"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_paradigm"
+                  >paradigmas de programação</a
+                >
+                predominantes na computação atual.
+              </span>
+            </li>
+            <li>
+              <span>
+                A maioria das linguagens modernas não se restringem a um
+                paradigma apenas, por isso, são denominadas
+                <u>multiparadigmas</u>.
+              </span>
+            </li>
+            <li>
+              <span>
+                Porém, ainda é útil conhecer conceitos sobre diversos métodos de
+                programar, para entender suas forças e fraquezas, e compreender
+                qual a melhor ferramenta para resolver um problema. Além disso,
+                muitas linguagens multiparadigma ainda priorizam um paradigma
+                específico, ou se tornam mais eficientes com seu uso.
+              </span>
+            </li>
+            <li>
+              <span>
+                Quem sabe, ao conhecer mais sobre um paradigma, não aprenderemos
+                novas maneiras de resolver problemas, e nos tornaremos melhores
+                programadores? Talvez até mesmo encontremos um jeito de
+                programar, que nos agrada ainda mais!
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="examples main">
+          <div>
+            <h2 class="foottitle">
+              => <u>Exemplos de linguagens consideradas 'multiparadigma'</u>:
+            </h2>
+          </div>
+          <div class="examplelogos">
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Python"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/python.png"
+                  style="padding: 12px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Rust"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="assets/icons/rust.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Go"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/go2.png"
+                  style="padding: 8px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="C++"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="./assets/icons/cpp.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Kotlin"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/kotlin.png"
+                  style="padding: 10px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Java"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/java.png"
+                  style="padding: 6px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Nim"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/nim.png"
+                  style="padding: 10px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Julia"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="assets/icons/julia.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Wolfram"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="assets/icons/wolfram.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="C#"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="assets/icons/csharp.png"
+                  style="padding: 11px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_paradigm">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_home">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Paradigma</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> Forma de conceituar e estruturar a implementação de um
+                programa de computação. Tende a descrever a sequência de
+                operações do código e a maneira como métodos podem interagir com
+                dados.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]',
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl),
+      );
+    </script>
+  </body>
+</html>

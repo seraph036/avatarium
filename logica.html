@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paralette</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./assets/favicon.png">
+  </head>
+
+  <body>
+    <header>
+      <div class="header_bar">
+        <ul class="row_nav">
+          <div>
+            <li><a href="index.html" class="home">λ</a></li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="procedimental.html"
+                class="link_ico"
+                id="c_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Procedimental"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide active"
+                ></a
+              >
+              <div class="ico_indicator" id="c_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="funcional.html"
+                class="link_ico"
+                id="haskell_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Funcional"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="haskell_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="orientada_a_objetos.html"
+                class="link_ico"
+                id="c_sharp_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Orientada a Objetos"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="c_sharp_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="reativa.html"
+                class="link_ico"
+                id="svelte_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Reativa"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="svelte_lang_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="logica.html"
+                class="link_ico_active logic"
+                id="prolog_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Lógica"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator_active logic" id="prolog_indicator"></div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="sectitle logic">Programação Lógica</h1>
+      <div class="bodytxt">
+        <div class="maindef">
+          <ul>
+            <li>
+              <span>
+                O paradigma lógico é um padrão declarativo de programação, no qual o aplicativo é construído como uma sequência de predicados da lógica formal, com a computação sendo performada por meio da interpretação lógica dessas expressões.
+              </span>
+            </li>
+            <li>
+              <span>
+                Esse método é bastante utilizado em áreas que requerem definições ou restrições extensas, como processamento de dados e machine learning, processamento de linguagem natural, gerenciamento de bancos de dados, análise preditiva, dentre outros.
+              </span>
+            </li>
+            <li>
+              <span>
+                Um campo muito importante para esse paradigma é a <a class="btn btn-lg dictterm color1" role="button" data-bs-toggle="modal"
+                data-bs-target="#modal_atp">Prova Automática de Teoremas</a>, que foi imprescindível para o surgimento da Ciência da Computação como um todo, e permite que programas deduzam e provem teoremas matemáticos.
+              </span>
+            </li>
+            <li>
+              <span>
+                Os componentes principais de uma linguagem lógica são os <a class="btn btn-lg dictterm color1" role="button" data-bs-toggle="modal"
+                data-bs-target="#modal_fact">facts</a>, as <a class="btn btn-lg dictterm color1" role="button" data-bs-toggle="modal"
+                data-bs-target="#modal_rule">rules</a> e as <a class="btn btn-lg dictterm color1" role="button" data-bs-toggle="modal"
+                data-bs-target="#modal_query">queries</a>. Esses definem o fluxo e os métodos do aplicativo, seguindo os padrões da lógica formal.
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="examples proc">
+          <div>
+            <h2 class="foottitle">
+              =>
+              <u>Linguagens que priorizam esse paradigma</u>:
+            </h2>
+          </div>
+          <div class="examplelogos">
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Prolog"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/prolog.png" style="padding: 10px ;"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Mercury"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/mercury.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Answer Set Programming"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/asp.png" style="padding: 10px ;"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Datalog"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/datalog.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_atp">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_logic">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>PAT</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> A Prova Automática de Teoremas é uma forma de raciocínio automatizado, em que há tentativa de provar um teorema matemático por uso de um computador. Embora não seja possível provar todos os teoremas, como demonstrado pelo <i>Teorema de Incompletude de Gödel</i> e pelo <i>Problema P vs NP</i>, esse campo é extremamente importante para tratar problemas decidíveis, como demonstrado pelo <i>Teorema da Completude de Gödel</i>.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_fact">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_logic">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Facts</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> São sentenças verdadeiras, utilizadas como base para a dedução de outras inferências. Formam a base lógica do código nesse paradigma.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_rule">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_logic">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Rules</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> É uma formula lógica que descreve uma relação entre dois valores, nesse caso, dois <i>facts</i>. A partir dos valores <i>booleans</i> inferidos a partir dessas relações, o fluxo do código é definido, bem como quais métodos declarados serão aplicados.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_query">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_logic">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Queries</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> É um pedido de informação ou uma condição específica que o programa lógico tenta satisfazer ou completar utilizando os métodos lógicos declarados. Tipicamente, consiste em uma 'pergunta' sobre <i>facts</i> e <i>rules</i> declarados no código, buscando indagar sobre a validade de relações entre dados, para estruturar o <i>dataflow</i> do programa.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div></div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]',
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl),
+      );
+    </script>
+  </body>
+</html>

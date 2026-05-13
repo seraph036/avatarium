@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paralette</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./assets/favicon.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header_bar">
+        <ul class="row_nav">
+          <div>
+            <li><a href="index.html" class="home">λ</a></li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="procedimental.html"
+                class="link_ico_active proc"
+                id="c_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Procedimental"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide active"
+                ></a
+              >
+              <div class="ico_indicator_active proc" id="c_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="funcional.html"
+                class="link_ico"
+                id="haskell_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Funcional"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="haskell_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="orientada_a_objetos.html"
+                class="link_ico"
+                id="c_sharp_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Orientada a Objetos"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="c_sharp_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="reativa.html"
+                class="link_ico"
+                id="svelte_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Reativa"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="svelte_lang_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="logica.html"
+                class="link_ico"
+                id="prolog_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Lógica"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="prolog_indicator"></div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="sectitle proc">Programação Procedimental</h1>
+      <div class="bodytxt">
+        <div class="maindef">
+          <ul>
+            <li>
+              <span>
+                O paradigma procedimental estrutura o código como uma série de
+                procedimentos, que tendem a modificar variáveis globais e o
+                <a
+                  class="btn btn-lg dictterm color3"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_state"
+                  >state</a
+                >, que se torna comum ao aplicativo como um todo, ou, pelo
+                menos, a uma grande parte dele.
+              </span>
+            </li>
+            <li>
+              <span>
+                Por um lado, essa organização torna o código direto e de rápida
+                confecção, uma vez que o escopo de variáveis ou a acessibilidade
+                do <i>state</i> tendem a não se tornarem impedimentos a
+                quaisquer implementações.
+              </span>
+            </li>
+            <li>
+              <span>
+                Por outro lado, essa abordagem pode introduzir, caso o
+                programador não seja cuidadoso com os acessos às variáveis,
+                problemas de comportamento imprevisível ou indesejado,
+                especialmente no caso de funções <i>async</i>, código
+                concorrente ou paralelo, dentre outros.
+              </span>
+            </li>
+            <li>
+              <span>
+                O acesso descontrolado pode permitir que variáveis sejam
+                modificadas enquanto estão em utilização por outras partes do
+                programa, ou que funções assíncronas modifiquem o
+                <i>state</i>, antes que isso seja desejado. Isso tende a
+                acontecer em grandes codebases, somente se houver falta de
+                cuidado nas condições de acesso aos dados.
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="examples proc">
+          <div>
+            <h2 class="foottitle">
+              =>
+              <u>Linguagens que priorizam esse paradigma</u>:
+            </h2>
+          </div>
+          <div class="examplelogos">
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="C"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="./assets/icons/c.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Cobol"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="./assets/icons/cobol.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Modula-3"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="./assets/icons/modula3.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Fortran"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/fortran.png"
+                  style="padding: 14px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Pascal"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="./assets/icons/pascal.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Zig"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/zig.png"
+                  style="padding: 6px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_state">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_proc">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>State</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> É a coleção de dados coletados pelo programa durante sua execução, sejam eles por <i>input</i> do usuário, sejam eles por um banco de dados criado previamente ao <i>runtime</i> do programa. Geralmente, o termo é utilizado para denominar a coleção de variáveis globais ou de escopo alto presentes em um programa.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div></div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]',
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl),
+      );
+    </script>
+  </body>
+</html>

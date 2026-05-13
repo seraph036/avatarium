@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paralette</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./assets/favicon.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header_bar">
+        <ul class="row_nav">
+          <div>
+            <li><a href="index.html" class="home">λ</a></li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="procedimental.html"
+                class="link_ico"
+                id="c_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Procedimental"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="c_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="funcional.html"
+                class="link_ico"
+                id="haskell_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Funcional"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="haskell_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="orientada_a_objetos.html"
+                class="link_ico_active obj"
+                id="c_sharp_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Orientada a Objetos"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide active"
+                ></a
+              >
+              <div
+                class="ico_indicator_active obj"
+                id="c_sharp_indicator"
+              ></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="reativa.html"
+                class="link_ico"
+                id="svelte_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Reativa"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="svelte_lang_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="logica.html"
+                class="link_ico"
+                id="prolog_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Lógica"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="prolog_indicator"></div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="sectitle obj">Programação Orientada a Objetos</h1>
+      <div class="bodytxt">
+        <div class="maindef">
+          <ul>
+            <li>
+              <span>
+                A orientação a objetos é um paradigma que prioriza a utilização
+                de estruturas de classes, que servem como <i>blueprints</i> para
+                a criação de objetos.
+              </span>
+            </li>
+            <li>
+              <span>
+                Com isso, há uma segregação parcial do <i>state</i> do programa,
+                levando a menor influência direta em variáveis globais.
+              </span>
+            </li>
+            <li>
+              <span>
+                Isso leva a menor comportamento imprevisível, embora também
+                aumente a complexidade da estrutura lógica do programa.
+              </span>
+            </li>
+            <li>
+              <span>
+                Contudo, a orientação a objetos, muitas vezes, não é capaz de
+                segregar perfeitamente o <i>state</i> do programa,
+                diferentemente da programação funcional. Além disso, a
+                comunicação entre objetos pode tornar o código complexo e
+                prolixo, dificultando a compreensão e introduzindo demasiadas
+                classes intermediárias.
+              </span>
+            </li>
+            <li>
+              <span>
+                Além disso, esse paradigma induz o uso de conceitos e técnicas
+                como
+                <a
+                  class="btn btn-lg dictterm color4"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_abstract"
+                  >abstração</a
+                >,
+                <a
+                  class="btn btn-lg dictterm color4"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_inherit"
+                  >herança</a
+                >,
+                <a
+                  class="btn btn-lg dictterm color4"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_capsule"
+                  >encapsulamento</a
+                >
+                e
+                <a
+                  class="btn btn-lg dictterm color4"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_polymorph"
+                  >polimorfismo</a
+                >.
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="examples obj">
+          <div>
+            <h2 class="foottitle">
+              =>
+              <u>Linguagens que priorizam esse paradigma</u>:
+            </h2>
+          </div>
+          <div class="examplelogos">
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Java"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/java.png"
+                  style="padding: 6px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Dart"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/dart.png"
+                  style="padding: 11px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="C#"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/csharp.png"
+                  style="padding: 10.5px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="C++"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="./assets/icons/cpp.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="TypeScript"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/typescript.png"
+                  style="padding: 12px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="JavaScript"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="./assets/icons/javascript.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Ruby"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/ruby.png"
+                  style="padding: 12px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Delphi"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="./assets/icons/delphi.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Swift"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/swift.png"
+                  style="padding: 12px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="F#"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/fsharp.png"
+                  style="padding: 11px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Ada"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/ada.png"
+                  style="padding: 6px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_abstract">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_obj">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Abstração</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> Forma de acesso a dados, ocultando seus detalhes complexos,
+                similar a uma simplificação. Esse conceito possibilita a
+                interação com objetos, permitindo que apenas suas implementações
+                necessárias sejam acessadas, escondendo métodos
+                detalhados.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_inherit">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_obj">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Herança</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> Propriedade do paradigma orientado a objetos, permitindo que
+                objetos herdem propriedades, implementações e métodos de outros
+                objetos. A principal vantagem é a reusabilidade de código, caso
+                múltiplos indivíduos tenham objetivos similares ou lidem com
+                dados de mesmo tipo.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_capsule">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_obj">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Encapsulamento</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> Essa prática consiste na maior segregação possível de
+                diferentes objetos e seus <i>states</i>, dificultando o acesso e
+                a modificação de variáveis globais e o <i>state</i> da aplicação
+                como um todo.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_polymorph">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_obj">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Polimorfismo</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> Propriedade responsável por habilitar objetos em posições
+                distintas de uma cadeia de herança a utilizarem métodos de
+                outros objetos nessa mesma cadeia, possibilitando comportamentos
+                compartilhados e/ou <i>overrides</i> específicos para
+                determinadas implementações.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div></div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]',
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl),
+      );
+    </script>
+  </body>
+</html>

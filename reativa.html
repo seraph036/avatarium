@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paralette</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./assets/favicon.png">
+  </head>
+
+  <body>
+    <header>
+      <div class="header_bar">
+        <ul class="row_nav">
+          <div>
+            <li><a href="index.html" class="home">λ</a></li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="procedimental.html"
+                class="link_ico"
+                id="c_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Procedimental"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="c_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="funcional.html"
+                class="link_ico"
+                id="haskell_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Funcional"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="haskell_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="orientada_a_objetos.html"
+                class="link_ico"
+                id="c_sharp_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Orientada a Objetos"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="c_sharp_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="reativa.html"
+                class="link_ico_active react"
+                id="svelte_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Reativa"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide active"
+                ></a
+              >
+              <div class="ico_indicator_active react" id="svelte_lang_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="logica.html"
+                class="link_ico"
+                id="prolog_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Lógica"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="prolog_indicator"></div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="sectitle react">Programação Reativa</h1>
+      <div class="bodytxt">
+        <div class="maindef">
+          <ul>
+            <li>
+              <span>
+                O paradigma reativo é um padrão declarativo da programação, que se volta principalmente às <a class="btn btn-lg dictterm color5" role="button" data-bs-toggle="modal"
+                data-bs-target="#modal_dstream">streams</a> e à propagação de mudanças de valores de dados.
+              </span>
+            </li>
+            <li>
+              <span>
+                Utilizando esse método, pode-se expressar <i>streams</i> dinâmicas ou estáticas de dados, além de poder-se gerenciar e transmitir mudanças de dados para quaisquer dependências inferidas dessas variáveis.
+              </span>
+            </li>
+            <li>
+              <span>
+                A partir desse modelo, tem-se uma propagação automática e facilitada do <a class="btn btn-lg dictterm color5" role="button" data-bs-toggle="modal"
+                data-bs-target="#modal_dflow">dataflow</a>, após sua alteração.
+              </span>
+            </li>
+            <li>
+              <span>
+                Frequentemente, pode ser necessário ainda diferenciar entre diferentes <i>data flows</i>, refletindo a urgência e imediatidade de diferentes mudanças e atualizações de dados.
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="examples react">
+          <div>
+            <h2 class="foottitle">
+              =>
+              <u>Principais implementações desse paradigma</u>:
+            </h2>
+          </div>
+          <div class="examplelogos">
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Elm"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/elm.png" style="padding: 15px ;"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Verilog"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/verilog.png" style="padding: 9px ;"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Svelte"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/svelte.png"
+                  style="padding: 10px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="ReactiveX"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/reactivex.png" style="padding: 14px ;"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="TidalCycles"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/tidalcycles.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_dstream">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_react">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Streams</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> É uma sequência de elementos de dados, potencialmente ilimitados, que se torna disponível para um algoritmo com o passar do tempo. Pode ser pensada como uma 'esteira', que leva um dado de cada vez a um método pré-definido.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_dflow">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_react">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Dataflow</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> Processamento de <i>streams</i>, ou seja, consiste no gráfico de dados distribuídos ao longo da execução do código, e como esses são processados pelo programa e seus métodos.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div></div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]',
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl),
+      );
+    </script>
+  </body>
+</html>

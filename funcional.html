@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paralette</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./assets/favicon.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header_bar">
+        <ul class="row_nav">
+          <div>
+            <li><a href="index.html" class="home">λ</a></li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="procedimental.html"
+                class="link_ico"
+                id="c_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Procedimental"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="c_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="funcional.html"
+                class="link_ico_active func"
+                id="haskell_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Funcional"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide active"
+                ></a
+              >
+              <div
+                class="ico_indicator_active func"
+                id="haskell_indicator"
+              ></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="orientada_a_objetos.html"
+                class="link_ico"
+                id="c_sharp_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Orientada a Objetos"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="c_sharp_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="reativa.html"
+                class="link_ico"
+                id="svelte_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Reativa"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="svelte_lang_indicator"></div>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a
+                href="logica.html"
+                class="link_ico"
+                id="prolog_header_logo"
+                data-bs-toggle="tooltip"
+                data-bs-title="Programação Lógica"
+                data-bs-placement="bottom"
+                data-bs-custom-class="header_guide"
+                ></a
+              >
+              <div class="ico_indicator" id="prolog_indicator"></div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="sectitle func">Programação Funcional</h1>
+      <div class="bodytxt func">
+        <div class="maindef" style="margin-bottom: -20px">
+          <ul>
+            <li>
+              <span>
+                O paradigma funcional utiliza principalmente da composição e
+                aplicação de funções para construir programas.
+              </span>
+            </li>
+            <li>
+              <span>
+                Diferentemente dos paradigmas procedimental e orientado a
+                objetos, trata-se de um paradigma declarativo, ou seja, as
+                funções aqui são expressões que mapeiam valores a outros
+                valores, em vez de sequências de comandos imperativos que
+                modificam o <i>state</i> do aplicativo.
+              </span>
+            </li>
+            <li>
+              <span>
+                Baseando-se em um modelo matemático, esse paradigma tem foco na
+                utilização de funções
+                <a
+                  class="btn btn-lg dictterm color2"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_pure"
+                  >puras</a
+                >
+                e variáveis
+                <a
+                  class="btn btn-lg dictterm color2"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_immut"
+                  >imutáveis</a
+                >. Não existe, portanto, um <i>state</i> global, pois as funções
+                matemáticas recebem um <i>input</i> e retornam um <i>output</i>,
+                não criando efeitos colaterais ou modificando valores externos.
+                Assim, os aplicativos criados tendem a ter poucos erros em
+                <a
+                  class="btn btn-lg dictterm color2"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_runtime"
+                  >runtime</a
+                >, especialmente pois muitas linguagens com influência funcional
+                também tem tipos
+                <a
+                  class="btn btn-lg dictterm color2"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_static"
+                  >estáticos</a
+                >
+                e compiladores que verificam possíveis furos no código.
+              </span>
+            </li>
+            <li>
+              <span>
+                A implementação das chamadas funções
+                <a
+                  class="btn btn-lg dictterm color2"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal_lambda"
+                  >lambda</a
+                >
+                também é relevante, uma vez que ela pode diminuir a prolixidade
+                do código, facilitando a leitura e aprimorando a estilização da
+                escrita.
+              </span>
+            </li>
+            <li>
+              <span>
+                Uma possível desvantagem desse paradigma é a menor
+                acessibilidade, uma vez que a estruturação do código funcional
+                pode ser, em primeira vista, menos intuitiva ou imediatamente
+                compreensível, caso o programador não tenha costume com esse
+                modo de programar.
+              </span>
+            </li>
+            <li>
+              <span>
+                Em muitas linguagens, embora não predomine o paradigma
+                funcional, há vários comportamentos que se baseiam nessa
+                construção, visando coesão e estabilidade.
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="examples func" style="margin-top: -60px">
+          <div>
+            <h2 class="foottitle">
+              =>
+              <u>Linguagens que priorizam esse paradigma</u>:
+            </h2>
+          </div>
+          <div class="examplelogos">
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Haskell"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/haskell.png"
+                  style="padding: 12px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Elixir"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/elixir.png"
+                  style="padding: 14px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Erlang"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="./assets/icons/erlang.png"
+                  style="padding: 10px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Clojure"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="./assets/icons/clojure.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="examples func">
+          <h2 class="foottitle">
+            =>
+            <u
+              >Linguagens que utilizam significamente comportamentos
+              funcionais</u
+            >:
+          </h2>
+          <div class="examplelogos">
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Rust"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="assets/icons/rust.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="R"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="assets/icons/r.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Julia"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img class="logoimg" src="assets/icons/julia.png"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="Scala"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="assets/icons/scala.png"
+                  style="padding: 12px"
+              /></a>
+            </div>
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-title="OCaml"
+              data-bs-placement="bottom"
+              data-bs-custom-class="langtip"
+            >
+              <a class="btn btn-lg img_hover"
+                ><img
+                  class="logoimg"
+                  src="assets/icons/ocaml.png"
+                  style="padding: 8px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_pure">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_func">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Função Pura</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> A função pura é aquela que atende perfeitamente ao modelo
+                matemático de função, ou seja, recebe um <i>input</i> e retorna
+                um <i>output</i>, sem resultar em <i>side effects</i> (efeitos
+                colaterais). Com isso, a função não modifica variáveis externas
+                ao seu próprio escopo ou o <i>state</i> do programa, impedindo
+                comportamento imprevisível.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_immut">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_func">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Variável Imutável</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> O dado imutável é aquele que, uma vez declarado, não pode
+                ser alterado. Tal abordagem tende a ser padrão na programação
+                puramente funcional, dado que impede a modificação perigosa de
+                variáveis de escopo alheio, e conforma aos modelos matemáticos
+                que motivam esse paradigma.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_func">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Tipo Estático</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> A linguagem de tipagem estática é aquela que necessita que
+                os tipos das variáveis sejam declarados juntamente aos seus
+                valores. Tal comportamento impede problemas de inferência de
+                tipos, comuns em linguagens de tipagem dinâmica.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_runtime">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_func">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Runtime</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> Runtime é o momento de execução do código, ou seja, é o
+                período em que o programa está em utilização, 'rodando'. Esse
+                momento contrasta o <i>compile time</i>, que é o momento de
+                compilação de linguagens compiladas, e precede o runtime. A
+                captura de erros durante o compile time é ideal, uma vez que
+                possibilita a correção de erros antes que eles possam causar
+                problemas durante a execução.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal_lambda">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content modal_func">
+            <div class="modal-header">
+              <h4 class="midtitle">Dicionário de Termos</h4>
+              <h5>Funções Lambda (λ)</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-animation="true"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span
+                >=> Lambda é o modelo anônimo de função, ou seja, funções sem
+                nome explícito que são comumente declaradas <i>inline</i>. Esse
+                modelo, baseado no chamado <i>lambda calculus</i>, facilita a
+                legibilidade e a conveniência de se escrever código, uma vez que
+                diminui o <i>boilerplate</i> necessário para a funcionalidade
+                plena do código.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div></div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]',
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl),
+      );
+    </script>
+  </body>
+</html>
